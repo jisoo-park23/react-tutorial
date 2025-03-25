@@ -1,11 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import {StrictMode} from 'react'
+import {createRoot} from "react-dom/client";
+import ForNest from "./ForNest.jsx";
+import books from "./books";
+
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <App />
-        <p className="foo">WINGS 프로젝트</p>
-    </StrictMode>,
+        <ForNest src={books} />
+    </StrictMode>
 )

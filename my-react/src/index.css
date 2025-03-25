@@ -68,6 +68,6 @@ button:focus-visible {
   .foo{
     color: white;
     background-color: blue;
-    padding: 3px;
+    padding: 3pxz;
   }
 }
