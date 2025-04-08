@@ -1,9 +1,9 @@
 import {StrictMode} from 'react'
 import {createRoot} from "react-dom/client";
-import EventOnce from "./ReactEx/EventOnce.jsx";
+import StateTodo from "./ReactEx/chap04/StateTodo.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <EventOnce/>
+        <StateTodo />
     </StrictMode>
 )
