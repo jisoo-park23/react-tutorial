@@ -1,12 +1,13 @@
-import React, { StrictMode } from 'react';  // React import 추가
+import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import MyThemeProvider from "./ReactEx/chap07/MyThemeProvider.jsx";
-import HookThemeButton from "./ReactEx/chap07/HookThemeButton.jsx";
+import {RouterProvider} from "react-router-dom";
+import {HelmetProvider} from "react-helmet-async";
+import routesHandle from "./ReactEx/chap08/routesHandle.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <MyThemeProvider>
-            <HookThemeButton />
-        </MyThemeProvider>
+        <HelmetProvider>
+            <RouterProvider router={routesHandle}/>
+        </HelmetProvider>
     </StrictMode>
 );
